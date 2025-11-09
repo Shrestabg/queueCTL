@@ -28,6 +28,7 @@ QueueCTL lets you:
 
 
 queuectl/
+
 ├── cli.js              # Main CLI command entry
 
 ├── queue.js            # Job lifecycle management
