@@ -106,8 +106,8 @@ node cli.js dlq list
 
 Below is an example run showing multiple workers processing jobs concurrently.
 
-![QueueCTL Multi-Worker Demo]
-(assets/Screenshot 2025-11-09 184906.png)
+![QueueCTL Multi-Worker Demo](assets/demo-screenshot.png)
+
 
 
 
@@ -182,4 +182,4 @@ pending → processing → completed
 ## 👨‍💻 **Author**
 
 **Name:** *BG.Shresta*
-**Institution:** Amrita Vishwa Vidyapeetham - blr **
+**Institution:** Amrita Vishwa Vidyapeetham - blr 
