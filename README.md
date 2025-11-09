@@ -92,7 +92,7 @@ node cli.js dlq list
 
 Below is an example run showing multiple workers processing jobs concurrently.
 
-![QueueCTL Multi-Worker Demo](b5dac840-7364-437d-b18c-e11a7f784a6d.png)
+![QueueCTL Multi-Worker Demo](Screenshot 2025-11-09 184906.png)
 
 
 
