@@ -29,15 +29,25 @@ QueueCTL lets you:
 
 queuectl/
 ├── cli.js              # Main CLI command entry
+
 ├── queue.js            # Job lifecycle management
+
 ├── worker.js           # Worker logic for executing jobs
+
 ├── config.json         # Configurable parameters
+
 ├── jobs.json           # Job + DLQ storage
+
 ├── utils/
+
 │   └── lock.js         # File-level locking for concurrency safety
+
 ├── scripts/
+
 │   ├── smoke.ps1       # PowerShell test script
+
 │   └── smoke.sh        # Bash test script
+
 └── logs/               # Auto-generated job logs
 
 
@@ -96,7 +106,8 @@ node cli.js dlq list
 
 Below is an example run showing multiple workers processing jobs concurrently.
 
-![QueueCTL Multi-Worker Demo](queueCTL/Screenshot 2025-11-09 184906.png)
+![QueueCTL Multi-Worker Demo]
+(assets/Screenshot 2025-11-09 184906.png)
 
 
 
