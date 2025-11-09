@@ -132,7 +132,8 @@ Below is an example run showing multiple workers processing jobs concurrently.
 ## 📘 **Setup Instructions**
 
 # 1️⃣ Clone the repository
-git clone https://github.com/<your-username>/queuectl.git
+git clone https://github.com/Shrestabg/queuectl.git
+
 cd queuectl
 
 # 2️⃣ Install dependencies
