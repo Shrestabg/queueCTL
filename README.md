@@ -72,7 +72,9 @@ node cli.js worker start --count 1
 ### 🪟 **Terminal 2 (Controller)**
 
 node cli.js enqueue "echo Hello QueueCTL"
+
 node cli.js enqueue "not_a_real_command"
+
 node cli.js enqueue "ping 127.0.0.1 -n 20 > nul"
 
 
@@ -86,6 +88,7 @@ Watch the worker handle:
 Then run:
 
 node cli.js status
+
 node cli.js dlq list
 
 
@@ -93,7 +96,7 @@ node cli.js dlq list
 
 Below is an example run showing multiple workers processing jobs concurrently.
 
-![QueueCTL Multi-Worker Demo](Screenshot 2025-11-09 184906.png)
+![QueueCTL Multi-Worker Demo](queueCTL/Screenshot 2025-11-09 184906.png)
 
 
 
