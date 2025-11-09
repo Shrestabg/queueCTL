@@ -1,0 +1,77 @@
+{
+  "jobs": [
+    {
+      "id": "88a826bd-df44-4d24-b4a6-a455f1376a3d",
+      "command": "echo Hello QueueCTL",
+      "state": "completed",
+      "attempts": 0,
+      "max_retries": 3,
+      "created_at": "2025-11-09T13:16:33.828Z",
+      "updated_at": "2025-11-09T13:16:33.969Z",
+      "next_run_at": "2025-11-09T13:16:33.828Z",
+      "locked_by": null,
+      "locked_at": null,
+      "output": "Hello QueueCTL\r\n",
+      "elapsed_sec": "0.03"
+    },
+    {
+      "id": "0b5dc19d-cebe-498b-a871-91fdb7e0c7bc",
+      "command": "not_real",
+      "state": "dead",
+      "attempts": 4,
+      "max_retries": 3,
+      "created_at": "2025-11-09T13:16:53.015Z",
+      "updated_at": "2025-11-09T13:17:07.507Z",
+      "next_run_at": null,
+      "locked_by": null,
+      "locked_at": null,
+      "last_error": "'not_real' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+    },
+    {
+      "id": "ade02f16-96d6-4e85-a268-b8321cd66e20",
+      "command": "ping 127.0.0.1 -n 20 > nul",
+      "state": "dead",
+      "attempts": 4,
+      "max_retries": 3,
+      "created_at": "2025-11-09T13:17:20.174Z",
+      "updated_at": "2025-11-09T13:18:51.621Z",
+      "next_run_at": null,
+      "locked_by": null,
+      "locked_at": null,
+      "last_error": "Command failed: ping 127.0.0.1 -n 20 > nul\n"
+    },
+    {
+      "id": "e7140e22-c8c1-4b31-a56f-c4f4968c86c0",
+      "command": "not_real_cmd",
+      "state": "dead",
+      "attempts": 4,
+      "max_retries": 3,
+      "created_at": "2025-11-09T13:17:31.313Z",
+      "updated_at": "2025-11-09T13:17:46.118Z",
+      "next_run_at": null,
+      "locked_by": null,
+      "locked_at": null,
+      "last_error": "'not_real_cmd' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n"
+    }
+  ],
+  "dlq": [
+    {
+      "id": "0b5dc19d-cebe-498b-a871-91fdb7e0c7bc",
+      "moved_at": "2025-11-09T13:17:07.507Z",
+      "last_error": "'not_real' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n",
+      "command": "not_real"
+    },
+    {
+      "id": "e7140e22-c8c1-4b31-a56f-c4f4968c86c0",
+      "moved_at": "2025-11-09T13:17:46.118Z",
+      "last_error": "'not_real_cmd' is not recognized as an internal or external command,\r\noperable program or batch file.\r\n",
+      "command": "not_real_cmd"
+    },
+    {
+      "id": "ade02f16-96d6-4e85-a268-b8321cd66e20",
+      "moved_at": "2025-11-09T13:18:51.621Z",
+      "last_error": "Command failed: ping 127.0.0.1 -n 20 > nul\n",
+      "command": "ping 127.0.0.1 -n 20 > nul"
+    }
+  ]
+}

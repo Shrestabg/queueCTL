@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Log files
+logs/
+*.log
+
+# Queue lock files
+.queue.lock
+.jobs.lock
+
+# Control flags for workers
+.control/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
